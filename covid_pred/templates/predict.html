@@ -1,0 +1,30 @@
+{% extends 'extras/base.html' %}
+{% block content %}
+{% include 'extras/nav.html' %}
+
+{% if classification_result == 1 %}
+
+<div class="container dv">
+    <hr>
+    <br>
+    <h1 class='text-center text-danger'><b>COVID POSITIVE</b></h1>
+
+    <h1 class='text-center'><b class='text-danger'>Might have been affected. Visit Medical Station</b></h1>
+    <a class='btn btn-primary col-md-12 text-center' href="{% url 'dashboard' %}">Go Back</a>
+</div>
+
+{% else %}
+
+<div class="container dv">
+    <hr>
+    <br>
+    <h1 class='text-center text-success'><b>COVID Negative</b></h1>
+
+    <h1 class='text-center'><b class='text-success'>Might not have been affected</b></h1>
+
+    <a class='btn btn-primary col-md-12 text-center' href="{% url 'dashboard' %}">Go Back</a>
+
+</div>
+
+{% endif %}
+{% endblock content %}

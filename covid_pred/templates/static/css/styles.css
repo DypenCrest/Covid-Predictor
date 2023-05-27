@@ -1,0 +1,17 @@
+.bgimg{
+  background-image: url("/static/img/nav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.strok{
+  color: red;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.dv{
+  background-color: rgb(52, 52, 52);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
